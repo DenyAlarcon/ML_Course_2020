@@ -8,12 +8,12 @@
 
 ((* block packages *))
     \usepackage{fontspec}
-    \setsansfont{CMU Sans Serif}
-    \setmainfont{CMU Serif}
-    \setmonofont{CMU Typewriter Text}
-    % \setsansfont{Arial}
-    % \setmainfont{Times New Roman}
-    % \setmonofont{Consolas}
+    % \setsansfont{CMU Sans Serif}
+    % \setmainfont{CMU Serif}
+    % \setmonofont{CMU Typewriter Text}
+    \setsansfont{Arial}
+    \setmainfont{Times New Roman}
+    \setmonofont{Consolas}
 
     \usepackage{polyglossia}
     \setmainlanguage{russian}
@@ -120,9 +120,9 @@
     \vfill\vfill
 
     \begin{center}
-    \Large Лабораторная работа ((* if 'lab_number' in nb.metadata *))№((( nb.metadata.lab_number )))((* endif *))\\
+    \Large Рубежный контроль ((* if 'rk_number' in nb.metadata *))№((( nb.metadata.rk_number )))((* endif *))\\
     по~дисциплине\\{\LARGE<<Методы машинного обучения>>}\\
-    на~тему\\{\LARGE<<((( nb_title | escape_latex )))>>}
+    Вариант №((( nb.metadata.variant )))
     \end{center}
 
     \vfill\vfill
